@@ -1,4 +1,8 @@
 
+// https://github.com/LennartHennigs/ESPTelnet
+// I was inspired by @LenartHennigs ESPTelnet Library
+// Thank you, @LenartHennigs!
+
 #pragma once
 
 #include <Arduino.h>
@@ -7,9 +11,8 @@
 #include <WiFi.h>
 #include <WebServer.h>
 using WebServerClass = WebServer;
-#elif defined(ARDUINO_ARCH_ESP8266)
-#include <ESP8266WiFi.h>
-#include <ESP8266WebServer.h>
+#else
+#error Only for ARDUINO_ARCH_ESP32
 #endif
 
 class ESPTelnet : public Stream {

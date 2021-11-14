@@ -1,4 +1,8 @@
 
+// https://github.com/LennartHennigs/ESPTelnet
+// I was inspired by @LenartHennigs ESPTelnet Library
+// Thank you, @LenartHennigs!
+
 #include "ESPTelnet.h"
 
 ESPTelnet::ESPTelnet() : isConnected(false),
